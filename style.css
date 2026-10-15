@@ -5,6 +5,9 @@
 
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -12,17 +15,43 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    padding: 20px 140px 20px 140px;
 }
 
 .header-content {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin: 20px 140px 20px 140px;
 }
 
 main {
     max-width: 1440px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: 160px auto;
+}
+
+.album-container {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+
+    border: 1px solid;
+}
+
+.album-element {
+    height: 150px;
+    width: 150px;
+    border: 2px solid rgba(18, 70, 88, 1);
+    border-radius: 16px;
+
 }
 
 footer {
