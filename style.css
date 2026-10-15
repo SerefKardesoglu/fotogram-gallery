@@ -56,4 +56,20 @@ main {
 
 footer {
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
