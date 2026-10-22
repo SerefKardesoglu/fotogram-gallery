@@ -3,11 +3,18 @@
     margin: 0;
 }
 
+:root{
+    --text-color:white;
+    --bg-color-header-footer:rgba(9, 33, 42, 1);
+    --bg-color-main:rgba(6, 23, 30, 1);
+}
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--text-color);
 }
 
 header {
@@ -15,6 +22,7 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
+    background-color: var(--bg-color-header-footer);
 }
 
 .header-content {
@@ -25,7 +33,11 @@ header {
 }
 
 main {
-    max-width: 1440px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color-main);
 }
 
 .main-content {
@@ -37,7 +49,7 @@ main {
 }
 
 .album-container {
-    max-width: 1170px;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -58,6 +70,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: var(--bg-color-header-footer);
 }
 
 .footer-content {
