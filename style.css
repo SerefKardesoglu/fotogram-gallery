@@ -3,10 +3,14 @@
     margin: 0;
 }
 
-:root{
-    --text-color:white;
-    --bg-color-header-footer:rgba(9, 33, 42, 1);
-    --bg-color-main:rgba(6, 23, 30, 1);
+:root {
+    --text-color: white;
+    --bg-color-header-footer: rgba(9, 33, 42, 1);
+    --bg-color-main: rgba(6, 23, 30, 1);
+}
+
+html {
+    font-size: 14px;
 }
 
 body {
@@ -48,6 +52,13 @@ main {
     margin: 160px auto;
 }
 
+.main-content>h1 {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4rem;
+}
+
 .album-container {
     max-width: 1440px;
     display: flex;
@@ -78,6 +89,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.footer-content>p {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .footer-logo {
