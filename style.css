@@ -72,6 +72,12 @@ h1 {
     object-fit: cover;
     border: 2px solid rgba(18, 70, 88, 1);
     border-radius: 16px;
+    transition: border 0.5s ;
+}
+
+.album-container img:hover {
+    border: 2px solid rgb(136 236 255);
+    cursor: pointer;
 }
 
 footer {
