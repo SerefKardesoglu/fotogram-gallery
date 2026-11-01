@@ -72,12 +72,28 @@ h1 {
     object-fit: cover;
     border: 2px solid rgba(18, 70, 88, 1);
     border-radius: 16px;
-    transition: border 0.5s ;
+    transition: border 0.5s;
 }
 
 .album-container img:hover {
     border: 2px solid rgb(136 236 255);
     cursor: pointer;
+}
+
+dialog {
+    width: 75vw;
+    height: 60vw;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-color: rgba(9, 33, 42, 1);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 56px;
+    padding-left: 64px;
+    padding-right: 64px;
 }
 
 footer {
