@@ -81,6 +81,8 @@ h1 {
 }
 
 dialog {
+    display: flex;
+    flex-direction: column;
     width: 75vw;
     height: 60vw;
     margin: 0 auto;
@@ -107,6 +109,51 @@ dialog {
 
 .dialog-header>img:active {
     background-color: rgba(13, 50, 64, 1);
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.arrow-left {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(253, 91, 79, 0.1);
+}
+
+.arrow-left>img {
+    height: 24px;
+    width: 24px;
+}
+
+.arrow-left:hover {
+    cursor: pointer;
+    background-color: rgba(253, 91, 79, 0.2);
+}
+
+.arrow-right {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+     background-color: rgba(253, 91, 79, 0.1);
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+    background-color: rgba(253, 91, 79, 0.2);
+}
+
+.arrow-right>img {
+    height: 24px;
+    width: 24px;
 }
 
 footer {
