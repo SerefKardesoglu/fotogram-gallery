@@ -80,14 +80,17 @@ h1 {
     cursor: pointer;
 }
 
-dialog {
-    display: flex;
-    flex-direction: column;
+dialog{
     width: 75vw;
     height: 60vw;
     margin: 0 auto;
     border-radius: 40px;
     background-color: rgba(9, 33, 42, 1);
+}
+
+dialog[open]{
+    display: flex;
+    flex-direction: column;
 }
 
 .dialog-header {
