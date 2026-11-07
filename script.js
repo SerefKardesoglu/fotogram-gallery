@@ -10,7 +10,13 @@ for (let i = 0; i < images.length; i++) {
     })
 }
 
-close.addEventListener('click', function(){
-dialog.close()
+close.addEventListener('click', function () {
+    dialog.close()
+})
+
+dialog.addEventListener('click', function (e) {
+    if (e.target === dialog) {
+        dialog.close()
+    }
 })
 
