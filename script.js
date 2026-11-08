@@ -38,5 +38,12 @@ btnLeft.addEventListener('click', function () {
     dialogImg.src = images[currentIndex].src;
 })
 
+btnRight.addEventListener('click', function () {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
+    dialogImg.src = images[currentIndex].src;
+})
 
 
