@@ -6,6 +6,30 @@
 h1 {
     font-size: 3rem;
 }
+dialog {
+        padding: 16px; 
+        width: 90%;    
+        max-width: 400px;
+    }
+
+    .dialog-header {
+        padding: 4px 16px; 
+    }
+
+    #image-title {
+        font-size: 1.1rem; 
+    }
+
+    #dialog-img {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: contain;
+    }
+
+    .dialog-footer {
+        padding: 8px 0;   /* Reduziert den Innenabstand oben und unten im Footer */
+        gap: 16px;        /* Falls du Flexbox nutzt: sorgt für gleichmäßigen Abstand der Elemente */
+    }
 }
 
 @media screen and (max-width: 481px){
