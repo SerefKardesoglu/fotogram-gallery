@@ -12,9 +12,12 @@ const btnLeft = document.getElementById("prev-btn");
 
 const btnRight = document.getElementById("next-btn");
 
+const imageCounter = document.getElementById("image-counter");
+
 for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function () {
         currentIndex = i;
+        updateImageCounter()
         dialogImg.src = images[i].src;
         dialog.showModal()
     })
@@ -35,6 +38,7 @@ btnLeft.addEventListener('click', function () {
     if (currentIndex < 0) {
         currentIndex = images.length - 1;
     }
+    updateImageCounter()
     dialogImg.src = images[currentIndex].src;
 })
 
@@ -43,7 +47,11 @@ btnRight.addEventListener('click', function () {
     if (currentIndex >= images.length) {
         currentIndex = 0;
     }
+    updateImageCounter()
     dialogImg.src = images[currentIndex].src;
 })
 
+function updateImageCounter() {
+    imageCounter.textContent = `${currentIndex + 1} / ${images.length}`;
+}
 
