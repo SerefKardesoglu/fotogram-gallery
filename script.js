@@ -14,6 +14,8 @@ const btnRight = document.getElementById("next-btn");
 
 const imageCounter = document.getElementById("image-counter");
 
+let imageTitle = document.getElementById("image-title");
+
 for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function () {
         currentIndex = i;
@@ -53,5 +55,8 @@ btnRight.addEventListener('click', function () {
 
 function updateImageCounter() {
     imageCounter.textContent = `${currentIndex + 1} / ${images.length}`;
+    imageTitle.textContent = images[currentIndex].alt;
 }
+
+
 

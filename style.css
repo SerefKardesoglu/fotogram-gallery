@@ -97,8 +97,12 @@ dialog[open] {
 
 .dialog-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 56px 64px 48px 64px;
+}
+
+#image-title{
+    color: white;
 }
 
 .dialog-header>img {
