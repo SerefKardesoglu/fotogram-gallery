@@ -1,6 +1,6 @@
 const dialog = document.getElementById("dialog");
 
-let images = document.querySelectorAll(".album-container img");
+let images = document.querySelectorAll(".album-element");
 
 const close = document.getElementById("close-btn");
 
@@ -20,7 +20,7 @@ for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', function () {
         currentIndex = i;
         updateImageCounter()
-        dialogImg.src = images[i].src;
+        dialogImg.src = images[i].querySelector("img").src;
         dialog.showModal()
     })
 }
@@ -41,7 +41,7 @@ btnLeft.addEventListener('click', function () {
         currentIndex = images.length - 1;
     }
     updateImageCounter()
-    dialogImg.src = images[currentIndex].src;
+    dialogImg.src = images[currentIndex].querySelector("img").src;
 })
 
 btnRight.addEventListener('click', function () {
@@ -50,12 +50,12 @@ btnRight.addEventListener('click', function () {
         currentIndex = 0;
     }
     updateImageCounter()
-    dialogImg.src = images[currentIndex].src;
+    dialogImg.src = images[currentIndex].querySelector("img").src;
 })
 
 function updateImageCounter() {
     imageCounter.textContent = `${currentIndex + 1} / ${images.length}`;
-    imageTitle.textContent = images[currentIndex].alt;
+    imageTitle.textContent = images[currentIndex].querySelector("img").alt;
 }
 
 
