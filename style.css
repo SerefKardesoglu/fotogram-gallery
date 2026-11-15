@@ -180,6 +180,14 @@ dialog::backdrop {
     background-color: rgba(253, 91, 79, 0.2);
 }
 
+.arrow-left:active {
+    background-color: rgba(253, 91, 79, 0.1);
+}
+
+.arrow-left:focus {
+    background-color: rgba(253, 91, 79, 0.2);
+}
+
 .arrow-right {
     height: 60px;
     width: 60px;
@@ -194,6 +202,14 @@ dialog::backdrop {
 
 .arrow-right:hover {
     cursor: pointer;
+    background-color: rgba(253, 91, 79, 0.2);
+}
+
+.arrow-right:active {
+    background-color: rgba(253, 91, 79, 0.1);
+}
+
+.arrow-right:focus {
     background-color: rgba(253, 91, 79, 0.2);
 }
 
