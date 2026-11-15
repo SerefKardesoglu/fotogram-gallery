@@ -160,8 +160,10 @@ dialog::backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     border-radius: 50%;
     background-color: rgba(253, 91, 79, 0.1);
+    outline: none;
 }
 
 .arrow-left>img {
@@ -180,8 +182,10 @@ dialog::backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
     border-radius: 50%;
     background-color: rgba(253, 91, 79, 0.1);
+    outline: none;
 }
 
 .arrow-right:hover {
