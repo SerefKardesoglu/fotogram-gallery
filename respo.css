@@ -27,18 +27,7 @@ dialog {
     }
 
     .dialog-footer {
-        padding: 8px 0;   /* Reduziert den Innenabstand oben und unten im Footer */
-        gap: 16px;        /* Falls du Flexbox nutzt: sorgt für gleichmäßigen Abstand der Elemente */
+        padding: 8px 0;   
+        gap: 16px;        
     }
-}
-
-@media screen and (max-width: 481px){
-body {
-    gap: 40px;
-}
-
-main {
-    gap: 40px;
-}
-
 }

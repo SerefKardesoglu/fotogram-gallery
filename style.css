@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 160px;
+    gap: clamp(40px, 15vw, 160px);
     color: var(--text-color);
     background-color: var(--bg-color-main);
 }
@@ -40,7 +40,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 160px;
+    gap: clamp(40px, 15vw, 160px);
     flex: 1;
     padding: 0 16px;
 }
