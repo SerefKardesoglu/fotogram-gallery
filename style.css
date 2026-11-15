@@ -64,6 +64,15 @@ h1 {
 .album-element {
     height: 150px;
     width: 150px;
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.album-element:focus img{
+    border-radius: 16px;
+    border: 2px solid rgb(136 236 255);
 }
 
 .album-container img {
